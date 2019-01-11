@@ -26,8 +26,13 @@ class EjemploMasterDetails : AppCompatActivity() {
             mensa=Toast.makeText(applicationContext, "Vertical", Toast.LENGTH_SHORT)
             mensa.show()
         }
+        val num=5
         val intent = Intent(this, OtraActivity::class.java).apply {
-        putExtra("id", 5)
+
+        putExtra("id",   num)
+
+
+
         }
 
         button.setOnClickListener {

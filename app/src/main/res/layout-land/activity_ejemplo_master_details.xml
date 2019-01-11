@@ -4,6 +4,15 @@
                                              android:layout_height="match_parent">
 
     <TextView
+            android:layout_width="128dp"
+            android:layout_height="99dp"
+            android:id="@+id/tValue" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.815"
+    />
+    <TextView
             android:text="@string/horizontal"
             android:layout_width="176dp"
             android:layout_height="70dp"
