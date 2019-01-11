@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_ejemplo_master_details.*
 import android.widget.Toast
-
+import org.jetbrains.anko.*
 
 
 class EjemploMasterDetails : AppCompatActivity() {
@@ -13,20 +13,30 @@ class EjemploMasterDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejemplo_master_details)
 
-
+        //Toast para mandar mensaje dentro de cada opción
         val mensa :Toast
 
+        //If para saber en que layout esta
         if ( Horizontal!= null) {
-
+        //Mensaje para saber que lo detecto
             mensa = Toast.makeText(applicationContext, "Horizontal", Toast.LENGTH_SHORT)
             mensa.show()
         }else{
             mensa=Toast.makeText(applicationContext, "Vertical", Toast.LENGTH_SHORT)
             mensa.show()
         }
+        //val intent = Intent(this, OtraActivity::class.java).apply {
+        //putExtra("id", 5)
+        //}
 
-
+        button.setOnClickListener {
+            //Pagina web
+            browse("https://github.com/Luisfrb56/EjemplosMasterDetails")
+            //Otra actividad
+            //startActivity(intent)
+        }
     }
+
 
 
 
