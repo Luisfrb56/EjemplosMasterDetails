@@ -1,5 +1,6 @@
 package com.example.lrodriguezbarroncas.ejemplosmasterdetails
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_ejemplo_master_details.*
@@ -25,15 +26,15 @@ class EjemploMasterDetails : AppCompatActivity() {
             mensa=Toast.makeText(applicationContext, "Vertical", Toast.LENGTH_SHORT)
             mensa.show()
         }
-        //val intent = Intent(this, OtraActivity::class.java).apply {
-        //putExtra("id", 5)
-        //}
+        val intent = Intent(this, OtraActivity::class.java).apply {
+        putExtra("id", 5)
+        }
 
         button.setOnClickListener {
             //Pagina web
-            browse("https://github.com/Luisfrb56/EjemplosMasterDetails")
+            //browse("https://github.com/Luisfrb56/EjemplosMasterDetails")
             //Otra actividad
-            //startActivity(intent)
+            startActivity(intent)
         }
     }
 
