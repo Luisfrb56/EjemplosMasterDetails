@@ -13,11 +13,11 @@ class EjemploMasterDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejemplo_master_details)
 
-        var Horizontal=false
+
         val mensa :Toast
 
-        if ( Vertical!= null) {
-             Horizontal= true
+        if ( Horizontal!= null) {
+
             mensa = Toast.makeText(applicationContext, "Horizontal", Toast.LENGTH_SHORT)
             mensa.show()
         }else{
